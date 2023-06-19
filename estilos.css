@@ -1,0 +1,70 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 10px;
+    background-color:rgb(252, 130, 130);
+}
+
+form{
+    max-width: 700px;
+    margin: 0 auto;
+    background-color:rgba(78, 104, 198, 0.511);
+    padding: 20px;
+    border-radius: 4px;
+}
+h1,h2,p{
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 20px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+textarea,
+select{
+    width: 200%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+textarea{
+    resize: vertical;
+}
+
+.a
+{
+    display: flex;
+    justify-content:space-between ;
+}
+.error{
+    color:rgba(88, 215, 88, 0.511);
+    margin-bottom: 0px
+}
+
+.success{
+    color:antiquewhite;
+    margin-bottom: 10px;
+}
+
+::placeholder{
+    color: black;
+}
+select{
+    background-color: rgb(104, 148, 104);
+}
+input:valid{
+
+    background-color: rgb(104, 148, 104);
+}
+input:invalid{
+    background-color: rgb(203, 121, 121);
+}

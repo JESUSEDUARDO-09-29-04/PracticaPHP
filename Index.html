@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PracticaPHP</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Registro de usuario</h1>  
+    <h2>Colocar los datos de manera correcta</h2>
+    <p>Revisar que los datos sean correctos</p>
+    <form action="Respuesta.PHP" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Inicio</legend>
+            <table>
+                <tr>
+                    <td><label>Nombre Completo:</label></td>
+                    <td><input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" 
+                        pattern="[a-zA-Z ]+" minlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><label>Nombre de usuario:</label></td>
+                    <td><input type="text" name="usuario" id="usuario" placeholder="usuario" 
+                        pattern="[a-zA-Z0-9]+" minlength="8" required></td>
+                </tr>
+                <tr>
+                    <td><label>Correo Electrónico:</label></td>
+                    <td><input type="email" name="correo" id="correo" placeholder="Correo Electronico" 
+                        pattern="(?=.*[@])(?=.*[\.])[a-zA-Z0-9_@\.]+" required></td>
+                </tr>
+                <tr>
+                    <td><label>Número de telefóno:</label></td>
+                    <td><input type="text" name="telefono" id="telefono" placeholder="telefono" 
+                        pattern="[0-9]{10}" minlength="10" maxlength="10" required></td>
+                </tr>
+                <tr>
+                    <td><label>Contraseña:</label></td>
+                    <td><input type="password" name="Contrasenia" id="Contrasenia" placeholder="Minimo una letra mayuscula, una minuscula, un numero" 
+                        required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$"></td>
+                </tr>
+                <tr>
+                    <td><label>Confirmar contraseña:</label></td>
+                    <td><input type="password" name="Confcontra" id="Confcontra" placeholder="Minimo un caracter, un numero, una letra mayuscula, una letra minuscula"></td>
+                </tr>
+                <tr>
+                    <td><label>Genero :</label></td>
+                    <td><select name="genero" id="genero" required>
+                        <option value="value">Seleciona una opcion</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Femenino">Femenino</option>
+                    </select ></td>
+                </tr>
+                <tr>
+                    <td><label>Fecha de Nacimiento:</label></td>
+                    <td><input type="date" name="nacimiento" id="nacimiento" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Iniciar Sesión" /></td>
+                  </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
